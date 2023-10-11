@@ -68,4 +68,8 @@ export class ShowCountryComponent implements OnInit {
       this.router.navigate(['/countries']);
     });
   }
+
+  goBack(): void {
+    this.router.navigate(['/countries']);
+  }
 }
