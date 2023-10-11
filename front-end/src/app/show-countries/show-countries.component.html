@@ -1,0 +1,11 @@
+<h2> List of Countries </h2>
+
+<ng-container *ngFor = "let country of countries">
+
+    <a href = "/country/{{country.id}}"> <h1> {{country.name}} </h1></a>
+
+</ng-container><br>
+
+<div>
+<a routerLink = "/country/create-country">Add Country</a>
+</div>

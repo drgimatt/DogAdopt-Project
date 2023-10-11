@@ -1,0 +1,10 @@
+<h1> Country </h1>
+
+<form [formGroup]="countryForm" (ngSubmit)="onSubmit()">
+    Country id: <input type="number" name="id" formControlName="id"> <br>
+    Country name: <input type="text" name="name" formControlName="name"> <br>
+    Country language: <input type="text" name="language" formControlName="language"> <br><br>
+
+    <button type="submit" [disabled]="countryForm.invalid">Update Country</button><br><br>
+    <button (click)="executeDeleteFunction()">Remove Country</button> 
+</form>
